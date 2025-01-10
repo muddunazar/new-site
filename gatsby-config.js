@@ -7,6 +7,15 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`, // Dynamically load the correct .env file
+});
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
